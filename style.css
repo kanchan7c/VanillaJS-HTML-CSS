@@ -1,0 +1,40 @@
+/* Google fonts Roboto  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/* CSS reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+ol li {
+  font-size: 1.8rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid lightgray;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+ol li:hover {
+  background-color: rgba(243, 232, 232, 0.76);
+}
+
+li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
+}

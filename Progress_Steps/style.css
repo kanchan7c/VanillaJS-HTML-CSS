@@ -21,15 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(196, 231, 252);
-  background: radial-gradient(
-    circle at 65% 65%,
-    rgba(63, 81, 181, 0.15) 28%,
-    rgba(3, 169, 244, 0.51) 43%,
-    rgba(0, 188, 212, 0.51) 49%,
-    rgba(103, 58, 183, 0.05) 81%,
-    rgba(238, 130, 238, 0.48) 100%
-  );
+  background-color: rgb(255, 255, 255);
 }
 
 .container {
