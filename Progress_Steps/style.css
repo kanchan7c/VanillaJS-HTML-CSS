@@ -1,0 +1,110 @@
+/* Google fonts Roboto  */
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+/* CSS reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --line-empty: rgb(170, 168, 168);
+  --line-fill: rgb(8, 137, 230);
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(196, 231, 252);
+  background: radial-gradient(
+    circle at 65% 65%,
+    rgba(63, 81, 181, 0.15) 28%,
+    rgba(3, 169, 244, 0.51) 43%,
+    rgba(0, 188, 212, 0.51) 49%,
+    rgba(103, 58, 183, 0.05) 81%,
+    rgba(238, 130, 238, 0.48) 100%
+  );
+}
+
+.container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before {
+  content: '';
+  background-color: var(--line-empty);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.progress {
+  background-color: var(--line-fill);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 4px;
+  width: 0%;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: 0.4s ease;
+}
+
+.circle {
+  background-color: #ffff;
+  color: gray;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--line-empty);
+}
+
+.circle.active {
+  border-color: var(--line-fill);
+}
+
+.btn {
+  background-color: var(--line-fill);
+  color: #ffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 8px 30px;
+  font-size: 16px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: var(--line-empty);
+  cursor: not-allowed;
+}
